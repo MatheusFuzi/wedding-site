@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fffaf7;
+    color: #333;
+    text-align: center;
+  }
+  
+  header {
+    background: #f8e1e1;
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #d6336c;
+  }
+  
+  .countdown, .info, .rsvp {
+    padding: 2rem;
+  }
+  
+  #timer {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #555;
+  }
+  
+  form input, form button {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: #d6336c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #a61e4d;
+  }
+  
+  footer {
+    padding: 1rem;
+    background: #f8e1e1;
+    color: #555;
+  }
+  

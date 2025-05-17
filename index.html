@@ -1,7 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casamento de Ana & João</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>
+    <h1>Matheus ❤️ Carla</h1>
+    <p>Nosso grande dia está chegando!</p>
+  </header>
+
+  <section class="countdown">
+    <h2>Contagem Regressiva</h2>
+    <div id="timer">
+      <span id="days">00</span>d :
+      <span id="hours">00</span>h :
+      <span id="minutes">00</span>m :
+      <span id="seconds">00</span>s
+    </div>
+  </section>
+
+  <section class="info">
+    <h2>Informações do Evento</h2>
+    <p><strong>Data:</strong> 09 de Agosto de 2025</p>
+    <p><strong>Local:</strong> Maria Mãe da Igreja - MArechal Cândido Rondon - PR</p>
+    <p><strong>Horário:</strong> 16:00</p>
+  </section>
+
+  <section class="rsvp">
+    <h2>Confirme sua Presença</h2>
+    <form id="rsvpForm">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu email" required />
+      <button type="submit">Confirmar</button>
+    </form>
+    <p id="thanksMessage" style="display:none;">Obrigado por confirmar! ❤️</p>
+  </section>
+
+  <footer>
+    <p>Com amor, Matheus & Carla</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
