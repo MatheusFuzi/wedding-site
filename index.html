@@ -1,48 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Casamento de Ana & João</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Casamento Matheus & Carla</title>
 </head>
 <body>
-  <header>
-    <h1>Matheus ❤️ Carla</h1>
-    <p>Nosso grande dia está chegando!</p>
-  </header>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-church" id="nav_logo"> Casamento M&C</i>
 
-  <section class="countdown">
-    <h2>Contagem Regressiva</h2>
-    <div id="timer">
-      <span id="days">00</span>d :
-      <span id="hours">00</span>h :
-      <span id="minutes">00</span>m :
-      <span id="seconds">00</span>s
-    </div>
-  </section>
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home" >Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre o casa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#confirme">Confirme sua presença</a>
+                </li>
+            </ul>
 
-  <section class="info">
-    <h2>Informações do Evento</h2>
-    <p><strong>Data:</strong> 09 de Agosto de 2025</p>
-    <p><strong>Local:</strong> Maria Mãe da Igreja - MArechal Cândido Rondon - PR</p>
-    <p><strong>Horário:</strong> 16:00</p>
-  </section>
+            <button class="btn-default">
+                Confirme sua presença
+            </button>
 
-  <section class="rsvp">
-    <h2>Confirme sua Presença</h2>
-    <form id="rsvpForm">
-      <input type="text" placeholder="Seu nome" required />
-      <input type="email" placeholder="Seu email" required />
-      <button type="submit">Confirmar</button>
-    </form>
-    <p id="thanksMessage" style="display:none;">Obrigado por confirmar! ❤️</p>
-  </section>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
 
-  <footer>
-    <p>Com amor, Matheus & Carla</p>
-  </footer>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre o casa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#confirme">Confirme sua presença</a>
+                </li>
+            </ul>
 
-  <script src="script.js"></script>
+            <button class="btn-default">
+                Confirme sua presença
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+
+                <h1 class="title">
+                    Você foi convidado para o nosso
+                    <span>casamento</span>
+                </h1>
+
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec augue sapien. Sed eget vulputate urna. Pellentesque laoreet est vel tortor sagittis vestibulum. Nam auctor odio dui, quis ullamcorper neque rutrum a. Ut dignissim bibendum lacus nec faucibus. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. In accumsan maximus odio, a elementum leo. Nam eu felis varius, dignissim dolor vitae, imperdiet quam. Nam dui arcu, dictum non enim ut, scelerisque condimentum odio. Mauris molestie sapien sed libero gravida porta. Nam dignissim lacus eu consectetur vestibulum. Phasellus tincidunt congue congue.
+                </p>
+
+                <div id="cta_buttons">
+
+                    <a href="#" class="btn-default"> Confirme sua presença</a>
+
+                    <a href="tel:+123456789" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        +123456789
+                    </a>
+
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+
+                
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+                
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+
+            </div>
+            <div id="banner">
+                <img src="src/images/Love.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <script src="src/javascript/script.js"></script>
 </body>
 </html>
