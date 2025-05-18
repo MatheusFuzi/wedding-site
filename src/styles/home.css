@@ -25,16 +25,6 @@
     font-size: 1.8rem;
 }
 
-#cta_buttons {
-    display: flex;
-    gap: 24px;
-}
-
-#cta_buttons a{
-    text-decoration: none;
-    color: #1d1d1d;
-}
-
 #phone_button {
     display: flex;
     gap: 8px;
@@ -97,19 +87,6 @@
         display: flex;
         flex-direction: column;
         gap: 28px; /* Garante espaçamento entre os elementos */
-    }
-
-    /* Garante que o grupo de botões também fique em coluna, se necessário */
-    #cta_buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        align-items: center;
-    }
-
-    #cta_buttons a {
-        display: block; /* garante que fique em bloco */
-        width: fit-content; /* ajusta ao tamanho do botão */
     }
 
     #banner {

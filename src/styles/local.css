@@ -25,16 +25,6 @@
     font-size: 1.2rem;
 }
 
-#cta_buttons {
-    display: flex;
-    gap: 24px;
-}
-
-#cta_buttons a{
-    text-decoration: none;
-    color: #1d1d1d;
-}
-
 #phone_button {
     display: flex;
     gap: 8px;
@@ -54,11 +44,11 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    width: 70%;
+    width: 60%;
   }
   
   #banner3 img {
-    height: 55vh;
+    height: 45vh;
     width: fit-content;
     z-index: 2;
     border-radius: 70px;
@@ -66,8 +56,8 @@
   
   .shape3 {
     background-color: var(--color-primary-2);
-    width: 50%;
-    height: 100%;
+    width: 40%;
+    height: 80%;
     position: absolute;
     border-radius: 40% 30% 0%;
     top: 0px;
@@ -92,18 +82,6 @@
         gap: 28px; /* Garante espaçamento entre os elementos */
     }
 
-    /* Garante que o grupo de botões também fique em coluna, se necessário */
-    #cta_buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        align-items: center;
-    }
-
-    #cta_buttons a {
-        display: block; /* garante que fique em bloco */
-        width: fit-content; /* ajusta ao tamanho do botão */
-    }
 
     #banner3 {
         display: flex;

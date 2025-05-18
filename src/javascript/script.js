@@ -58,7 +58,7 @@ $(document).ready(function() {
       distance: '20%'
   })
   ScrollReveal().reveal('#cta5', {
-    origin: 'bottom',
+    origin: 'left',
     duration: 1000,
     distance: '20%'
 })
