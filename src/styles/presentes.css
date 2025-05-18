@@ -1,38 +1,28 @@
-#home {
+#presentes {
     display: flex;
     min-height: calc(100vh - 91px);
     position: relative;
 }
 
-#cta {
-    width: 35%;
+#cta5 {
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 28px;
     margin-top: 5%;
 }
 
-#cta .title {
+#cta5 .title {
     font-size: 2.8rem;
     color: #1d1d1d;
 }
 
-#cta .title span {
+#cta5 .title span {
     color: var(--color-primary-2);
 }
 
-#cta .description {
-    font-size: 1.8rem;
-}
-
-#cta_buttons {
-    display: flex;
-    gap: 24px;
-}
-
-#cta_buttons a{
-    text-decoration: none;
-    color: #1d1d1d;
+#cta5 .description4 {
+    font-size: 1.5rem;
 }
 
 #phone_button {
@@ -44,43 +34,36 @@
     font-weight: 500;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-    cursor: pointer;
 }
 
 #phone_button button {
     box-shadow: none;
 }
 
-#banner {
+#banner4 {
     display: flex;
-    align-items: center;
-    justify-content: end;
+    align-items: start;
+    justify-content: start;
     width: 70%;
   }
   
-  #banner img {
-    max-width: 100%;
-    height: auto;
-    z-index: 2;
+  #banner5 img {
     height: 75vh;
-    border-radius: 30px;
+    width: fit-content;
+    z-index: 2;
+    border-radius: 70px;
   }
   
-  .shape {
+  .shape5 {
     background-color: var(--color-primary-2);
     width: 50%;
     height: 100%;
     position: absolute;
-    border-radius: 40% 30% 0% 20%;
+    border-radius: 0% 40% 30%;
     top: 0px;
-    right: 0px;
+    left: 0px;
     z-index: 1;
   }
-
-  #phone_button:hover {
-    transform: scale(1.02);
-    transition: all 0.3s ease;
-}
 
   @media screen and (max-width: 1170px) { 
     #home {
@@ -90,7 +73,7 @@
         min-height: auto;
     }
 
-    #cta {
+    #cta5 {
         width: 90%;
         text-align: center;
         align-items: center;
@@ -112,23 +95,23 @@
         width: fit-content; /* ajusta ao tamanho do botão */
     }
 
-    #banner {
+    #banner5 {
         display: flex;
         justify-content: center;
         width: 100%;
         margin-top: 24px;
     }
 
-    #banner img {
+    #banner5 img {
         max-width: 90%;
-        height: 50vh;
+        height: auto;
         border-radius: 30px;
     }
 
-    .shape {
+    .shape5 {
         display: none;
     }
-}
+  }
 
   @media screen and (max-width: 450px) {
     #phone_button button {

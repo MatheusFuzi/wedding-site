@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="stylesheet" href="src/styles/header.css">
-    <link rel="stylesheet" href="src/styles/home.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Casamento Matheus & Carla</title>
 </head>
 <body>
@@ -21,16 +20,18 @@
                     <a href="#home" >Início</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#sobre">Sobre o casa</a>
+                    <a href="#sobre">Sobre o casal</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#confirme">Confirme sua presença</a>
+                    <a href="#local">Local</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#dicas">Dicas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#presentes">Presentes</a>
                 </li>
             </ul>
-
-            <button class="btn-default">
-                Confirme sua presença
-            </button>
 
             <button id="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -43,10 +44,16 @@
                     <a href="#home">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#sobre">Sobre o casa</a>
+                    <a href="#sobre">Sobre o casal</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#confirme">Confirme sua presença</a>
+                    <a href="#local">Local</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dicas">Dicas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#presentes">Presentes</a>
                 </li>
             </ul>
 
@@ -58,48 +65,22 @@
 
     <main id="content">
         <section id="home">
+            <div class="shape"></div>
             <div id="cta">
-
                 <h1 class="title">
-                    Você foi convidado para o nosso
-                    <span>casamento</span>
+                    Vamos nos
+                    <span>casar</span>
                 </h1>
 
                 <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec augue sapien. Sed eget vulputate urna. Pellentesque laoreet est vel tortor sagittis vestibulum. Nam auctor odio dui, quis ullamcorper neque rutrum a. Ut dignissim bibendum lacus nec faucibus. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. In accumsan maximus odio, a elementum leo. Nam eu felis varius, dignissim dolor vitae, imperdiet quam. Nam dui arcu, dictum non enim ut, scelerisque condimentum odio. Mauris molestie sapien sed libero gravida porta. Nam dignissim lacus eu consectetur vestibulum. Phasellus tincidunt congue congue.
+                    Depois de 8 anos juntos vamos oficializar nossa união perante a Deus!
+                    Matheus, Paranaense nascido em Marechal Cândido Rondon, com cara de arabe e indiano, e Carla, Mato Grossense bicho do mato nascida em Vera, escolheram juntos misturar sotaques, famílias e amigos no dia 09.08.2025 para celebrar o amor.
                 </p>
 
                 <div id="cta_buttons">
 
-                    <a href="#" class="btn-default"> Confirme sua presença</a>
+                    <a href="https://wa.me/+5545999568764/?text=Ol%C3%A1,%20tudo%20bem?%20Confirmando%20a%20presen%C3%A7a!" class="btn-default"> Confirme sua presença</a>
 
-                    <a href="tel:+123456789" id="phone_button">
-                        <button class="btn-default">
-                            <i class="fa-solid fa-phone"></i>
-                        </button>
-                        +123456789
-                    </a>
-
-                </div>
-
-                <div class="social-media-buttons">
-                    <a href="">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </div>
-
-                
-                <div class="social-media-buttons">
-                    <a href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-
-                
-                <div class="social-media-buttons">
-                    <a href="">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
                 </div>
 
             </div>
@@ -107,7 +88,96 @@
                 <img src="src/images/Love.jpg" alt="">
             </div>
         </section>
+
+        <section id="sobre">
+            <div class="shape2"></div> 
+            
+            <div id="cta2">
+                <h1 class="title">
+                    Um pouco sobre nossa
+                    <span>história</span>
+                </h1>
+
+                <p class="description2">
+                    Nascidos em 1999 seus destinos já foram cruzados por Deus diante dos anos. Se conheceram em 2017 durante o seu último ano de estudo do ensino médio, ela vivia
+                    mexendo com ele, mas ele nem bola. Após diversas tentativa relutantes, ele começou a dar uma brecha para ela, primeiro vieram os trabalhos e atividades de colégios juntos, 
+                    até que um dia durante os ensaios da apresentação do colégio ela, passou mal. Foram até as tias da cozinha e trouxeram uma colher de café cheia de sal
+                    para ela, mas ela estava tão mal que não conseguiu comer, em um ato de nobreza o caro rapaz engoliu toda aquela colher de sal, provando sua bravura desde então, ele auxiliou a levar
+                    ela até o carro da professora aonde a levaram para o UPA. Após este episodio criaram uma amizade entre os dois, e assim começou as conversas, o tereré após a aula. Quando veio o primeiro beijo e então se aflorou um amor
+                    entre eles, em que cada dia que passa mesmo com as dificuldade cresce cada vez mais.
+
+                </p>
+            </div>
+
+            <div id="banner2">
+                <img src="src/images/Love2.jpg" alt="">
+            </div>
+            
+        </section>
+
+        <section id="local">
+            <div class="shape3"></div>
+            <div id="cta3">
+                <h1 class="title">
+                    Aonde vamos nos
+                    <span>casar</span>
+                </h1>
+
+                <p class="description3">
+                    A celebração ocorrerá as 17:00 na Paróquia Maria Mãe da Igreja <br> <br> R. Belém, 870 - Botafogo, Mal. Cândido Rondon - PR, 85960-000  
+                </p>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907.3891744579142!2d-54.05236876561042!3d-24.535417297117185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f37f8866e7190f%3A0x4b5f8225adf0660a!2sPar%C3%B3quia%20Maria%20M%C3%A3e%20da%20Igreja!5e0!3m2!1spt-BR!2sbr!4v1747575312069!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            <div id="banner3">
+                <img src="src/images/Igreja.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="dicas">
+            <div id="cta4">
+                <h1 class="title">
+                    Algumas
+                    <span>dicas</span>
+                    para aproveitar melhor este momento
+                </h1>
+
+                <p class="description4">
+                    Este é um daqueles momentos raros na vida em que o tempo parece desacelerar, os corações batem mais forte e tudo ao redor ganha um significado especial. Um instante feito de amor, sorrisos, memórias e promessas. Aproveitem cada segundo — respirem fundo, olhem ao redor, sintam a presença das pessoas queridas e deixem que cada gesto se transforme em lembrança. Hoje marca o início de uma nova história, escrita a duas mãos, com cumplicidade, respeito e carinho. Que a beleza deste dia acompanhe vocês por toda a caminhada, lembrando sempre que o mais importante não é apenas celebrar o amor, mas vivê-lo intensamente, todos os dias.
+
+Para que tudo seja ainda mais especial, pedimos com carinho: chegue com pelo menos 30 minutos de antecedência para que possamos iniciar no horário previsto. O traje sugerido é esporte fino — queremos todos confortáveis, elegantes e prontos para celebrar. Aproveite para tirar muitas fotos, registrar sorrisos, reencontrar amigos e brindar conosco. Esse dia é feito de detalhes e de pessoas queridas como você. Aproveite ao máximo!
+                </p>
+
+            </div>
+        </section>
+
+        <section id="presentes">
+            <div id="cta5">
+                <h1 class="title">
+                    Sugestões para 
+                    <span>presentes</span>
+                </h1>
+
+                <p class="description4">
+                    Primeiro sua presença é nosso melhor presente. Devido a morarmos em outro estado com voltagem diferente para eletrodomesticos, e também ao deslocamento com produtos até lá,
+                    sugerimos que nos dé o presente em vale de alguma loja ex. Magazine Luiza, Havan, Colombo... Ou fique a vontade para levar qualquer valor em papel moeda no dia do casamento.
+                </p>
+
+            </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2025 Matheus & Carla
+            </span>
+        </div>
+    </footer>
 
     <script src="src/javascript/script.js"></script>
 </body>
