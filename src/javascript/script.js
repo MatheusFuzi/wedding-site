@@ -61,5 +61,27 @@ $(document).ready(function() {
     origin: 'left',
     duration: 1000,
     distance: '20%'
-})
+    })
+
+    const dataFinal = new Date("2025-08-09T17:00:00").getTime();
+
+    const atualizarContagem = setInterval(function() {
+      const agora = new Date().getTime();
+      const tempoRestante = dataFinal - agora;
+  
+      if (tempoRestante <= 0) {
+        clearInterval(atualizarContagem);
+        $("#countdown").html("<h2>Tempo esgotado!</h2>");
+      } else {
+        const dias = Math.floor(tempoRestante / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((tempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((tempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((tempoRestante % (1000 * 60)) / 1000);
+  
+        $("#dias").text(dias.toString().padStart(2, '0'));
+        $("#horas").text(horas.toString().padStart(2, '0'));
+        $("#minutos").text(minutos.toString().padStart(2, '0'));
+        $("#segundos").text(segundos.toString().padStart(2, '0'));
+      }
+    }, 1000);
 });
