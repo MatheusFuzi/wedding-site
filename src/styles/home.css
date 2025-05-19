@@ -7,28 +7,28 @@
 .container {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.05);
-    padding: 40px;
+    padding: 10px;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
     backdrop-filter: blur(5px);
   }
   
   h1 {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     font-size: 2.5rem;
   }
   
   .countdown {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
   }
   
   .time-box {
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
+    padding: 10px;
     border-radius: 12px;
-    min-width: 80px;
+    min-width: 50px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
   
@@ -143,6 +143,23 @@
     .shape {
         display: none;
     }
+
+    h1 {
+        font-size: 1.5rem;
+      }
+    
+      .time-box {
+        padding: 12px;
+        min-width: 60px;
+      }
+    
+      .time-box span {
+        font-size: 1.5rem;
+      }
+    
+      .time-box small {
+        font-size: 0.75rem;
+      }
 }
 
   @media screen and (max-width: 450px) {
